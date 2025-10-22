@@ -3,9 +3,201 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <!-- header section -->
+    <header>
+      <h2 class="cafename">THE DAILY GRIND CAFE</h2>
+      <nav class="navigation">
+        <a href="./index.html">HOME</a>
+        <a href="../menu-page-files/menupage.html">MENU</a>
+        <a href="../ordering-page-files/orderpage.html">ORDER</a>
+        <a href="#">ABOUT</a>
+      </nav>
+    </header>
+
+    <!--top section (Top img and welcome card w/btns)-->
+    <main>
+      <div class="toppart">
+        <img
+          src="./images/amy-vosters-WdE9JhjDb0M-unsplash.jpg"
+          class="firstimg"
+        />
+        <div class="infobox">
+          <h1>
+            Welcome to the <br />
+            Daily Grind Cafe
+          </h1>
+          <p>
+            The perfect cafe to grab a coffee or dessert and get <br />
+            some work done! <br />
+            You can also grab a coffee or dessert to go <br />
+            or order online!
+          </p>
+          <button id="menubtn" class="menubtn">MENU</button>
+          <button id="orderbtn" class="orderbtn">ORDER HERE</button>
+        </div>
+      </div>
+
+      <!--Best sellers section-->
+      <div class="bestsellers">
+        <div class="titleone">
+          <h1>Best Sellers</h1>
+        </div>
+        <div class="itemrow">
+          <div class="espressopart">
+            <p>Espresso</p>
+            <img
+              src="./images/pexels-ana-gonzalez-1669645196-34386676 2.png"
+              class="espressoimg"
+            />
+            <img src="./images/stars.svg" class="pinkstarimg" />
+          </div>
+          <hr />
+          <div class="lattepart">
+            <p>Latte</p>
+            <img
+              src="./images/pexels-raymond-petrik-1448389535-34334635 2.png"
+              class="latteimg"
+            />
+            <img src="./images/stars.svg" class="pinkstarimg" />
+          </div>
+          <hr />
+          <div class="hotcocopart">
+            <p>Hot Chocolate</p>
+            <img
+              src="./images/pexels-nathanjhilton-19271883 2.png"
+              class="hotcocoimg"
+            />
+            <img src="./images/stars.svg" class="pinkstarimg" />
+          </div>
+          <hr />
+          <div class="cheesecakepart">
+            <p>Cheesecake</p>
+            <img
+              src="./images/pexels-cottonbro-4547572 2.png"
+              class="cheesecakeimg"
+            />
+            <img src="./images/stars.svg" class="pinkstarimg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- cafe info section -->
+      <div class="infoandcoffeebox">
+        <div class="cafeinfobox">
+          <div class="cafehours">
+            <h1>Cafe Hours:</h1>
+            <p>Monday: 6:00am - 8:00pm</p>
+            <p>Tuseday: 6:00am - 8:00pm</p>
+            <p>Wednesday: 6:00am - 8:00pm</p>
+            <p>Thrusday: 6:00am - 8:00pm</p>
+            <p>Friday: 6:00am - 8:00pm</p>
+            <p>Saturday: 9:00am - 87:00pm</p>
+            <p>Sundayday: 9:00am - 7:00pm</p>
+          </div>
+          <hr />
+          <div class="cafelocation">
+            <h1>Locations</h1>
+            <p>
+              123 Main Street, St.Johns<br />
+              Newfoundland, Canada
+            </p>
+            <br />
+            <p>
+              321 Happy Place, Toronto<br />
+              Ontario, Canada
+            </p>
+          </div>
+        </div>
+
+        <!-- classic drip coffee section -->
+        <div class="coffeedripbox">
+          <img src="./images/image 4.png" class="coffeebeanimg" />
+          <div class="coffeedripinfo">
+            <h1>Classic Coffee Drip</h1>
+            <br />
+            <p>
+              Our Classic Drip Coffee is brewed to perfection, <br />
+              offering a consistently smooth, rich <br />
+              and balanced flavor that’s perfect for your everyday <br />
+              routine.
+            </p>
+            <button id="menubtn2" class="menubtn2">MENU</button>
+          </div>
+          <
+        </div>
+      </div>
+
+      <!-- owner section -->
+      <div class="backgroundbox">
+        <img src="./images/image 5.png" class="ownerimg" />
+        <div class="ownerbox">
+          <div class="ownerinfo">
+            <h1>Meet the Owner</h1>
+            <p>
+              The Owner Gary Blue is from Toronto, Canada but spends his time
+              <br />
+              back and forth from Toronto and Newfoundland. He is a software
+              <br />
+              engineer from Harvard university. He decided to open a cafe where
+              <br />
+              fellow coders/programmers or anyone can come drink some coffee
+              <br />
+              and relax while doing some work, since those places are his
+              favorite.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- customer review section -->
+      <div class="customerreviewbox">
+        <div class="customerinfo">
+          <div class="customertitle">
+            <h1>Customer Reviews</h1>
+          </div>
+          <div class="maryspart">
+            <h2>Mary Ann</h2>
+            <p>
+              Best Cafe I've ever been too! <br />
+              Highly Recommend!
+            </p>
+          </div>
+          <img src="./images/Ellipse 6.svg" clss="customercircle" />
+          <div class="thomaspart">
+            <h2>Thomas Caleb</h2>
+            <p>
+              Great spot for grabbing a <br />
+              coffee and getting some work <br />
+              done.
+            </p>
+          </div>
+          <img src="./images/Ellipse 6.svg" clss="customercircle" />
+          <div class="hopespart">
+            <h2>Hope Kylie</h2>
+            <p>New Favorite cafe!</p>
+          </div>
+          <img src="./images/Ellipse 6.svg" clss="customercircle" />
+          <div class="jacobspart">
+            <h2>Jacob Marks</h2>
+            <p>
+              Great Coffee and Muffins, <br />
+              Definitely will be back!
+            </p>
+          </div>
+          <img src="./images/Ellipse 6.svg" clss="customercircle" />
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
   </body>
 </html>
