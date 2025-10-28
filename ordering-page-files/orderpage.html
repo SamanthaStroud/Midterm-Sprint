@@ -3,7 +3,191 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Order page</title>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./orderpage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- header section -->
+    <header>
+      <h2 class="cafename">THE DAILY GRIND CAFE</h2>
+      <nav class="navigation">
+        <a href="/main-page-files/index.html">HOME</a>
+        <a href="../menu-page-files/menupage.html">MENU</a>
+        <a href="../ordering-page-files/orderpage.html">ORDER</a>
+        <a href="#">ABOUT</a>
+      </nav>
+    </header>
+
+    <!--top section (Top img and welcome card w/btns)-->
+    <main>
+      <div class="toppart">
+        <img
+          src="./images/amy-vosters-WdE9JhjDb0M-unsplash.jpg"
+          class="firstimg"
+        />
+        <div class="infobox">
+          <h1>Ordering</h1>
+          <p>
+            Welcome to our online ordering. Whether you're after<br />
+            your daily coffee fix, or a sweet treat, we've made it<br />
+            easy to get your favorites - fresh, fast and just the way<br />
+            you like them.
+          </p>
+          <button id="homebtn" class="homebtn">HOME PAGE</button>
+          <button id="menubtn" class="menubtn">MENU</button>
+        </div>
+      </div>
+
+      <!-- best sellers section -->
+      <div class="bestsellers">
+        <div class="titleone">
+          <h1>Best Sellers</h1>
+        </div>
+        <div class="itemrow">
+          <div class="espressopart">
+            <p>Espresso</p>
+            <img
+              src="./images/pexels-ana-gonzalez-1669645196-34386676 2.png"
+              class="espressoimg"
+            />
+            <img src="./images/stars.svg" class="pinkstarimg" />
+          </div>
+          <hr />
+          <div class="lattepart">
+            <p>Latte</p>
+            <img
+              src="./images/pexels-raymond-petrik-1448389535-34334635 2.png"
+              class="latteimg"
+            />
+            <img src="./images/stars.svg" class="pinkstarimg" />
+          </div>
+          <hr />
+          <div class="hotcocopart">
+            <p>Hot Chocolate</p>
+            <img
+              src="./images/pexels-nathanjhilton-19271883 2.png"
+              class="hotcocoimg"
+            />
+            <img src="./images/stars.svg" class="pinkstarimg" />
+          </div>
+          <hr />
+          <div class="cheesecakepart">
+            <p>Cheesecake</p>
+            <img
+              src="./images/pexels-cottonbro-4547572 2.png"
+              class="cheesecakeimg"
+            />
+            <img src="./images/stars.svg" class="pinkstarimg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- cafe info section -->
+      <div class="infoandcoffeebox">
+        <div class="cafeinfobox">
+          <h1>Customer Details</h1>
+
+          <div style="display: flex; flex-direction: row; align-items: center">
+            <p>Full Name:</p>
+            <input id="firstNameInput" class="texrbox-10" />
+          </div>
+
+          <div style="display: flex; flex-direction: row; align-items: center">
+            <p>Number:</p>
+            <input
+              id="phoneNumberInput"
+              class="texrbox-10"
+              placeholder="123-456-7890"
+            />
+          </div>
+
+          <div style="display: flex; flex-direction: row; align-items: center">
+            <p>Address:</p>
+            <input
+              id="addressInput"
+              class="texrbox-10"
+              placeholder="Enter your address"
+            />
+          </div>
+        </div>
+
+        <!-- classic drip coffee section -->
+        <div class="coffeedripbox">
+          <div class="coffeedripinfo">
+            <h1>Selected Items</h1>
+
+            <button id="menubtn2" class="menubtn2">Place Order</button>
+          </div>
+        </div>
+      </div>
+
+      <!--divider box -->
+      <div class="dividerbox">
+        <img src="images/pexels-cileklipalet-34385615 1.jpg" />
+      </div>
+
+      <!-- customer review section -->
+      <div class="customerreviewbox">
+        <div class="ownerbox">
+          <p>For more info, and to stay up to date follow us @Dailygrindcafe</p>
+          <img src="images/FBicon.jpg" class="FBicon" />
+          <img src="images/IGiconcopy.jpg" class="IGicon" />
+        </div>
+        <div class="hotchoc">
+          <img
+            src="images/pexels-brigitte-tohm-36757-239584 1.jpg"
+            class="ownerimg"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footerbox">
+      <div class="footertitle">
+        <h1>THE DAILY GRIND CAFE</h1>
+        <nav class="footernav">
+          <a href="#">HOME</a>
+          <a href="#">MENU</a>
+          <a href="#">ORDER</a>
+          <a href="#">ABOUT</a>
+        </nav>
+      </div>
+      <div class="footertext">
+        <div class="footerhours">
+          <h2>Operating Hours</h2>
+          <p>Monday - Friday:<br /></p>
+          <p>6:00am - 8:00pm</p>
+          <br />
+          <p>Saturday - Sunday:<br /></p>
+          <p>9:00am - 7:00pm</p>
+        </div>
+        <div class="footerophr">
+          <hr />
+        </div>
+        <div class="footerlocationbox">
+          <div class="footerlocation">
+            <h3>Newfoundland Location:<br /></h3>
+            <p>1-709-453-1235<br /></p>
+            <p>123 Main Street, St. John's<br /></p>
+            <p>Newfoundland, Canada</p>
+          </div>
+          <hr />
+          <div class="footerlocation">
+            <h3>Toronto Location:<br /></h3>
+            <p>1-709-234-3456<br /></p>
+            <p>321 Happy Place, Toronto<br /></p>
+            <p>Ontario, Canada</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="orderpage.js"></script>
+  </body>
 </html>
