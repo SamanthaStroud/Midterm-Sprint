@@ -5,9 +5,10 @@
 }
 
 body {
-  height: auto;
+  height: 2229px;
 }
 /*header section*/
+
 header {
   display: flex;
   justify-content: space-between;
@@ -24,6 +25,11 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.navigation {
+  display: flex;
+  padding-right: 8%;
 }
 
 .navigation a {
@@ -155,8 +161,14 @@ hr {
   width: 3px;
 }
 
+.pinkstarimg {
+  padding-top: 8px;
+}
+
 .infoandcoffeebox {
   align-items: center;
+  margin-left: 0;
+  margin-right: 0;
 }
 /*cafe info section*/
 .cafeinfobox {
@@ -165,9 +177,8 @@ hr {
   justify-content: center;
   text-align: center;
   width: 50%;
-  height: 360px;
   background-color: #475b4f;
-  padding-top: 72px;
+  padding: 143px;
 }
 
 .cafehours {
@@ -238,13 +249,20 @@ hr {
   display: flex;
   flex-direction: row;
   text-align: center;
-  width: 50%;
-  height: 360px;
+  width: 100%;
+  max-width: 50vw;
+  padding-left: 0;
   background-color: rgba(69, 40, 22, 1);
 }
 
+.coffeebeanimg {
+  height: 504px;
+  padding: 0;
+}
+
 .coffeedripinfo {
-  padding-right: 100px;
+  padding-left: 112px;
+  padding: 72px;
 }
 .coffeedripinfo h1 {
   color: #f2ece0;
@@ -255,6 +273,7 @@ hr {
   line-height: normal;
   padding-top: 72px;
 }
+
 .coffeedripinfo p {
   color: #f2ece0;
   text-align: center;
@@ -281,12 +300,12 @@ hr {
 
 /*Owner section*/
 .backgroundbox {
-  height: 400px;
   width: auto;
   background-color: rgba(156, 126, 98, 1);
   display: flex;
   justify-content: center;
   padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .ownerimg {
@@ -299,8 +318,6 @@ hr {
   flex-direction: row;
   text-align: center;
   background-color: rgba(223, 196, 153, 1);
-  width: 669px;
-  height: 335px;
   justify-content: center;
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
@@ -326,20 +343,34 @@ hr {
   line-height: normal;
 }
 
+.ownerinfo {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.websiteonlytext {
+  color: #452816;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /*customer review section*/
 .customerreviewbox {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  height: 378px;
   width: auto;
   background-color: #f2ece0;
   text-align: center;
   gap: 30px;
+  padding-bottom: 24px;
 }
 
 .customerinfo {
   display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -350,14 +381,29 @@ hr {
 .thomaspart,
 .hopespart,
 .jacobspart {
-  position: relative;
-  z-index: 2;
+  width: 229px;
+  height: 229px;
+  background-color: rgba(216, 163, 144, 0.62);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   text-align: center;
+  margin-left: 40px;
+}
+
+.maryspart,
+.thomaspart,
+.hopespart {
+  margin-right: 40px;
 }
 
 .customerreviewbox h1 {
   color: #452816;
   text-align: center;
+  font-family: Lora;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -365,43 +411,147 @@ hr {
   padding-top: 32px;
 }
 
-.customerinfo h2 {
-  position: absolute;
+.customerreviewbox h2 {
   color: #452816;
   text-align: center;
+  font-family: Lora;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 15;
+  padding-bottom: 16px;
 }
 
-.customerinfo p {
-  position: absolute;
+.customerreviewbox p {
   color: #452816;
+  text-align: center;
+  font-family: Lora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.greenstars {
+  padding-top: 16px;
+}
+
+/*footer section*/
+.footerbox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 32px;
+  height: auto;
+  padding: 32px;
+  background-color: rgba(69, 40, 22, 1);
+  margin-bottom: 0;
+}
+
+.footerbox h1 {
+  color: rgba(242, 236, 224, 1);
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.footernav a {
+  color: rgba(243, 234, 225, 1);
+  position: relative;
+  font-size: 16px;
+  padding-right: 48px;
+  text-decoration: none;
+  padding-left: 32px;
+}
+
+.footertext {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 16px;
+  justify-content: center;
+}
+
+.footertext hr {
+  margin-bottom: 20px;
+  margin-top: 24px;
+}
+
+.footerhours h2 {
+  color: rgba(243, 234, 225, 1);
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 8px;
+}
+
+.footerhours p {
+  color: rgba(243, 234, 225, 1);
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
 }
 
-.customercircle {
-  .customercircle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
+.footerhours {
+  padding-top: 16px;
+  padding-right: 40px;
+  justify-content: center;
+  padding-left: 40px;
 }
-/**/
+
+.footerlocation {
+  justify-content: center;
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.contactus h2 {
+  color: rgba(243, 234, 225, 1);
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 8px;
+  justify-content: center;
+}
+
+.contactus {
+  display: flex;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.footerlocation p {
+  color: rgba(243, 234, 225, 1);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footerlocation h3 {
+  color: rgba(243, 234, 225, 1);
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 8px;
+}
+
+.footerlocationbox {
+  display: flex;
+  text-align: right;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+}

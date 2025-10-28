@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
+
     <link rel="stylesheet" href="./index.css" />
+
+    <link rel="stylesheet" href="./phonequeries.css" />
+
+    <link rel="stylesheet" href="./tabletqueries.css"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +27,6 @@
         <a href="./index.html">HOME</a>
         <a href="../menu-page-files/menupage.html">MENU</a>
         <a href="../ordering-page-files/orderpage.html">ORDER</a>
-        <a href="#">ABOUT</a>
       </nav>
     </header>
 
@@ -42,8 +48,10 @@
             You can also grab a coffee or dessert to go <br />
             or order online!
           </p>
-          <button id="menubtn" class="menubtn">MENU</button>
-          <button id="orderbtn" class="orderbtn">ORDER HERE</button>
+          <div class="twobtns">
+            <button id="menubtn" class="menubtn">MENU</button>
+            <button id="orderbtn" class="orderbtn">ORDER HERE</button>
+          </div>
         </div>
       </div>
 
@@ -92,50 +100,50 @@
       </div>
 
       <!-- cafe info section -->
-      <div class="infoandcoffeebox">
-        <div class="cafeinfobox">
-          <div class="cafehours">
-            <h1>Cafe Hours:</h1>
-            <p>Monday: 6:00am - 8:00pm</p>
-            <p>Tuseday: 6:00am - 8:00pm</p>
-            <p>Wednesday: 6:00am - 8:00pm</p>
-            <p>Thrusday: 6:00am - 8:00pm</p>
-            <p>Friday: 6:00am - 8:00pm</p>
-            <p>Saturday: 9:00am - 87:00pm</p>
-            <p>Sundayday: 9:00am - 7:00pm</p>
+        <div class="infoandcoffeebox">
+          <div class="cafeinfobox">
+            <div class="cafehours">
+              <h1>Cafe Hours:</h1>
+              <p>Monday: 6:00am - 8:00pm</p>
+              <p>Tuseday: 6:00am - 8:00pm</p>
+              <p>Wednesday: 6:00am - 8:00pm</p>
+              <p>Thrusday: 6:00am - 8:00pm</p>
+              <p>Friday: 6:00am - 8:00pm</p>
+              <p>Saturday: 9:00am - 87:00pm</p>
+              <p>Sundayday: 9:00am - 7:00pm</p>
+            </div>
+            <hr />
+            <div class="cafelocation">
+              <h1>Locations</h1>
+              <p>
+                123 Main Street, St.Johns<br />
+                Newfoundland, Canada
+              </p>
+              <br />
+              <p>
+                321 Happy Place, Toronto<br />
+                Ontario, Canada
+              </p>
+            </div>
           </div>
-          <hr />
-          <div class="cafelocation">
-            <h1>Locations</h1>
-            <p>
-              123 Main Street, St.Johns<br />
-              Newfoundland, Canada
-            </p>
-            <br />
-            <p>
-              321 Happy Place, Toronto<br />
-              Ontario, Canada
-            </p>
-          </div>
-        </div>
 
-        <!-- classic drip coffee section -->
-        <div class="coffeedripbox">
-          <img src="./images/image 4.png" class="coffeebeanimg" />
-          <div class="coffeedripinfo">
-            <h1>Classic Coffee Drip</h1>
-            <br />
-            <p>
-              Our Classic Drip Coffee is brewed to perfection, <br />
-              offering a consistently smooth, rich <br />
-              and balanced flavor that’s perfect for your everyday <br />
-              routine.
-            </p>
-            <button id="menubtn2" class="menubtn2">MENU</button>
+          <!-- classic drip coffee section -->
+          <div class="coffeedripbox">
+            <img src="./images/image 4.png" class="coffeebeanimg" />
+            <div class="coffeedripinfo">
+              <h1>Classic Coffee Drip</h1>
+              <br />
+              <p>
+                Our Classic Drip Coffee is brewed to perfection, <br />
+                offering a consistently smooth, rich <br />
+                and balanced flavor that’s perfect for your everyday <br />
+                routine.
+              </p>
+              <button id="menubtn2" class="menubtn2">MENU</button>
+            </div>
+            <
           </div>
-          <
         </div>
-      </div>
 
       <!-- owner section -->
       <div class="backgroundbox">
@@ -148,12 +156,14 @@
               <br />
               back and forth from Toronto and Newfoundland. He is a software
               <br />
-              engineer from Harvard university. He decided to open a cafe where
+              engineer from Harvard university. <div class='websiteonlytext'>
+                He decided to open a cafe where
               <br />
               fellow coders/programmers or anyone can come drink some coffee
               <br />
               and relax while doing some work, since those places are his
               favorite.
+              </div>
             </p>
           </div>
         </div>
@@ -161,18 +171,19 @@
 
       <!-- customer review section -->
       <div class="customerreviewbox">
+        <div class="customertitle">
+          <h1>Customer Reviews</h1>
+        </div>
         <div class="customerinfo">
-          <div class="customertitle">
-            <h1>Customer Reviews</h1>
-          </div>
           <div class="maryspart">
             <h2>Mary Ann</h2>
             <p>
               Best Cafe I've ever been too! <br />
               Highly Recommend!
             </p>
+            <img src="./images/starsgreen.svg" class="greenstars" />
           </div>
-          <img src="./images/Ellipse 6.svg" clss="customercircle" />
+          <hr />
           <div class="thomaspart">
             <h2>Thomas Caleb</h2>
             <p>
@@ -180,24 +191,67 @@
               coffee and getting some work <br />
               done.
             </p>
+            <img src="./images/starsgreen.svg" class="greenstars" />
           </div>
-          <img src="./images/Ellipse 6.svg" clss="customercircle" />
+          <hr />
           <div class="hopespart">
             <h2>Hope Kylie</h2>
             <p>New Favorite cafe!</p>
+            <img src="./images/starsgreen.svg" class="greenstars" />
           </div>
-          <img src="./images/Ellipse 6.svg" clss="customercircle" />
+          <hr />
           <div class="jacobspart">
             <h2>Jacob Marks</h2>
             <p>
               Great Coffee and Muffins, <br />
               Definitely will be back!
             </p>
+            <img src="./images/starsgreen.svg" class="greenstars" />
           </div>
-          <img src="./images/Ellipse 6.svg" clss="customercircle" />
         </div>
       </div>
     </main>
+
+    <!-- Footer section -->
+    <footer class="footerbox">
+      <div class="footertitle">
+        <h1>THE DAILY GRIND CAFE</h1>
+        <nav class="footernav">
+          <a href="#">HOME</a>
+          <a href="#">MENU</a>
+          <a href="#">ORDER</a>
+          <a href="#">ABOUT</a>
+        </nav>
+      </div>
+      <div class="footertext">
+        <div class="footerhours">
+          <h2>Operating Hours</h2>
+          <p>Monday - Friday:<br /></p>
+          <p>6:00am - 8:00pm</p>
+          <br />
+          <p>Saturday - Sunday:<br /></p>
+          <p>9:00am - 7:00pm</p>
+        </div>
+        <div class="footerophr">
+          <hr />
+        </div>
+        <div class="footerlocationbox">
+          <div class="footerlocation">
+            <h3>Newfoundland Location:<br /></h3>
+            <p>1-709-453-1235<br /></p>
+            <p>123 Main Street, St. John's<br /></p>
+            <p>Newfoundland, Canada</p>
+          </div>
+          <hr />
+          <div class="footerlocation">
+            <h3>Toronto Location:<br /></h3>
+            <p>1-709-234-3456<br /></p>
+            <p>321 Happy Place, Toronto<br /></p>
+            <p>Ontario, Canada</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

@@ -1,0 +1,440 @@
+/*Tablet styles*/
+@media (min-width: 768px) {
+  body,
+  .main {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .cafename {
+    text-align: left;
+    font-size: 100%;
+    padding-right: 16%;
+  }
+
+  .navigation {
+    display: flex;
+    padding-right: 8%;
+  }
+
+  .navigation a {
+    flex-direction: row;
+    font-size: 80%;
+    text-align: center;
+    padding-right: 8%;
+  }
+
+  /*  Top Part */
+  .infobox {
+    width: 55%;
+    padding-top: 4%;
+  }
+
+  .twobtns {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Best Seller Section (Scroll)*/
+  .itemrow {
+    overflow-y: hidden;
+    padding: 8%;
+    padding-left: 25%;
+  }
+
+  .espressopart,
+  .lattepart,
+  .hotcocopart,
+  .cheesecakepart {
+    display: flex;
+    justify-content: center;
+    padding: 0 8%;
+  }
+
+  /*  Info Section (Hours/Locations) */
+  .infoandcoffeebox {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .cafeinfobox {
+    flex-direction: row;
+    width: 100%;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .infoandcoffeebox p {
+    font-size: 80%;
+  }
+
+  /* Drip Coffee Section */
+  .coffeedripbox {
+    max-width: 768px;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .coffeedripinfo h1 {
+    font-size: x-large;
+    text-align: center;
+    padding-top: 8%;
+  }
+
+  .coffeedripinfo p {
+    padding-bottom: 4%;
+  }
+
+  .coffeedripinfo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  .coffeebeanimg {
+    display: none;
+  }
+
+  /* Owner Section */
+  .ownerbox {
+    display: flex;
+    padding: 0;
+  }
+  .ownerbox h1 {
+    padding-top: 8%;
+    padding-bottom: 4%;
+  }
+
+  .ownerimg {
+    width: 48%;
+  }
+
+  .ownerinfo {
+    padding-top: 2%;
+  }
+
+  /* Customer info section (Scroll) */
+  .customerinfo {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 4%;
+    padding-left: 20%;
+  }
+
+  .maryspart,
+  .thomaspart,
+  .hopespart,
+  .jacobspart {
+    min-width: 50vw;
+    margin-right: 20px;
+    flex-shrink: 0;
+    flex-direction: column;
+    width: auto;
+  }
+
+  /* Footer Section */
+  .footerbox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+    height: auto;
+    padding: 32px;
+    background-color: rgba(69, 40, 22, 1);
+    margin-bottom: 0;
+  }
+
+  .footerbox h1 {
+    color: rgba(242, 236, 224, 1);
+    font-family: Lora;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+
+  .footernav a {
+    color: rgba(243, 234, 225, 1);
+    position: relative;
+    font-size: 16px;
+    padding-right: 48px;
+    text-decoration: none;
+    padding-left: 32px;
+  }
+
+  .footertext {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 16px;
+    justify-content: center;
+  }
+
+  .footertext hr {
+    margin-bottom: 20px;
+    margin-top: 24px;
+  }
+
+  .footerhours h2 {
+    color: rgba(243, 234, 225, 1);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 8px;
+  }
+
+  .footerhours p {
+    color: rgba(243, 234, 225, 1);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .footerhours {
+    padding-top: 16px;
+    padding-right: 40px;
+    justify-content: center;
+    padding-left: 40px;
+  }
+
+  .footerlocation {
+    justify-content: center;
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .contactus h2 {
+    color: rgba(243, 234, 225, 1);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 8px;
+    justify-content: center;
+  }
+
+  .contactus {
+    display: flex;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .footerlocation p {
+    color: rgba(243, 234, 225, 1);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .footerlocation h3 {
+    color: rgba(243, 234, 225, 1);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 8px;
+  }
+
+  .footerlocationbox {
+    display: flex;
+    text-align: right;
+    justify-content: center;
+  }
+}
+
+/*Laptop styles*/
+@media (min-width: 1024px) {
+  /*  Top Part */
+  .infobox {
+    width: 45%;
+    padding-top: 4%;
+  }
+
+  .twobtns {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bestsellers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 264px;
+    background: #f2ece0;
+  }
+
+  /* Best Seller Section */
+  .itemrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-x: hidden;
+    padding: 12% 0;
+    padding-top: 4%;
+    padding-bottom: 6%;
+    max-width: 1400px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .espressopart,
+  .lattepart,
+  .hotcocopart,
+  .cheesecakepart {
+    width: 23%;
+    min-width: auto;
+    margin: 0;
+    height: 100%;
+  }
+
+  .infoandcoffeebox {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    overflow-x: hidden;
+    max-width: 1000px;
+  }
+
+  .cafeinfobox {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100%;
+    padding: 4% 0;
+    padding-left: 4%;
+    
+  }
+
+  .cafelocation {
+    width: 48%;
+    text-align: center;
+    position: relative;
+  }
+
+  .infoandcoffeebox {
+        margin: 0 auto;
+        padding: 0; 
+        max-width: none;
+  }
+
+  /* Drip Coffee Section */
+  .coffeedripbox {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1440px; 
+        margin: 0 auto;
+    }
+
+
+  /* Owner Section */
+  .ownerimg {
+    width: 30%;
+  }
+
+  .ownerinfo {
+    padding-top: 6%;
+  }
+
+  /* Customer info section (Scroll) */
+  .customerinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-x: hidden;
+    padding: 40% 0;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    max-width: 1200px;
+    margin: 0;
+  }
+
+  .maryspart,
+  .thomaspart,
+  .hopespart,
+  .jacobspart {
+    width: 23%;
+    min-width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  /*  Top Part */
+  .infobox {
+    width: 30%;
+    padding-top: 2%;
+  }
+
+  .twobtns {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bestsellers h1 {
+    padding-bottom: 0;
+  }
+
+  /* Drip Coffee Section */
+  .coffeedripbox {
+    max-width: 1440px;
+  }
+
+  /* Owner Section */
+  .ownerimg {
+    width: 20%;
+  }
+
+  .ownerinfo {
+    padding-top: 6%;
+  }
+
+  /* Customer info section (Scroll) */
+  .customerinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-x: hidden;
+    padding: 40% 0;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    max-width: 1200px;
+    margin: 0;
+  }
+
+  .maryspart,
+  .thomaspart,
+  .hopespart,
+  .jacobspart {
+    width: 23%;
+    min-width: auto;
+    margin: 0;
+  }
+}
