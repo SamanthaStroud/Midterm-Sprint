@@ -26,25 +26,12 @@ header {
   line-height: normal;
 }
 
-@media (max-width: 600px) {
-  .cafename {
-    font-size: 18px;
-  }
-}
-
 .navigation a {
   color: rgba(243, 234, 225, 1);
   position: relative;
   font-size: 16px;
   padding-right: 50px;
   text-decoration: none;
-}
-
-@media (max-width: 600px) {
-  .navigation a {
-    font-size: 14px;
-    padding-right: 20px;
-  }
 }
 
 .toppart {
@@ -115,13 +102,6 @@ header {
   background: #f2ece0;
 }
 
-@media (max-width: 600px) {
-  .bestsellers {
-    height: auto;
-    width: 100%;
-  }
-}
-
 .bestsellers h1 {
   padding: 16px;
   color: #452816;
@@ -134,13 +114,6 @@ header {
   display: flex;
   justify-content: center;
   padding-bottom: 0;
-}
-
-@media (max-width: 600px) {
-  .bestsellers h1 {
-    font-size: 24px;
-    padding-top: 8px;
-  }
 }
 
 .bestsellers p {
@@ -161,22 +134,8 @@ header {
   padding-top: 0;
 }
 
-@media (max-width: 600px) {
-  .itemrow {
-    width: 100%;
-    flex-direction: row;
-  }
-}
-
 .pinkstarimg {
   padding-top: 8px;
-}
-
-@media (max-width: 600px) {
-  .pinkstarimg {
-    width: 40px;
-    height: 40px;
-  }
 }
 
 /*cafe info section*/
@@ -192,14 +151,6 @@ header {
   background-color: #475b4f;
 }
 
-@media (max-width: 600px) {
-  .cafeinfobox {
-    width: 50%;
-    height: auto;
-    padding-bottom: 32px;
-  }
-}
-
 .cafeinfobox h1 {
   color: black;
   text-align: center;
@@ -211,12 +162,6 @@ header {
   margin: auto;
 }
 
-@media (max-width: 600px) {
-  .cafeinfobox h1 {
-    font-size: 24px;
-  }
-}
-
 .cafeinfobox p {
   color: black;
   text-align: left;
@@ -226,14 +171,6 @@ header {
   line-height: normal;
   padding-right: 16px;
   margin: auto;
-}
-
-@media (max-width: 600px) {
-  .cafeinfobox p {
-    font-size: 14px;
-    text-align: center;
-    padding-bottom: 8px;
-  }
 }
 
 .texrbox-10 {
@@ -251,11 +188,7 @@ header {
   transition: all 250ms ease-in;
 }
 
-@media (max-width: 600px) {
-  .texrbox-10 {
-    width: 120px;
-    font-size: 14px;
-  }
+.cart-items {
 }
 
 .espressopart,
@@ -273,17 +206,6 @@ header {
   padding-bottom: 32px;
 }
 
-@media (max-width: 600px) {
-  .espressopart,
-  .lattepart,
-  .hotcocopart,
-  .cheesecakepart {
-    padding: 16px;
-    margin: 0 8px;
-    width: 100%;
-  }
-}
-
 .cheesecakeimg,
 .hotcocoimg,
 .latteimg,
@@ -292,16 +214,6 @@ header {
   height: 102px;
   padding-bottom: 8px;
   padding-top: 8px;
-}
-
-@media (max-width: 600px) {
-  .cheesecakeimg,
-  .hotcocoimg,
-  .latteimg,
-  .espressoimg {
-    width: 30px;
-    height: 55px;
-  }
 }
 
 .infoandcoffeebox {
@@ -319,13 +231,6 @@ header {
   background-color: #475b4f;
 }
 
-@media (max-width: 600px) {
-  .coffeedripbox {
-    width: 500%;
-    height: auto;
-    padding-bottom: 32px;
-  }
-}
 .coffeedripinfo h1 {
   color: black;
   text-align: center;
@@ -334,12 +239,6 @@ header {
   font-weight: 400;
   line-height: normal;
   padding-top: 32px;
-}
-
-@media (max-width: 600px) {
-  .coffeedripinfo h1 {
-    font-size: 24px;
-  }
 }
 
 .menubtn2 {
@@ -356,12 +255,6 @@ header {
   align-items: center;
 }
 
-@media (max-width: 600px) {
-  .menubtn2 {
-    font-size: 14px;
-  }
-}
-
 .itembox-10 {
   padding: 8px;
   margin: 8px;
@@ -374,12 +267,6 @@ header {
   font-size: 15px;
 }
 
-@media (max-width: 600px) {
-  .itembox-10 {
-    width: 120px;
-    font-size: 14px;
-  }
-}
 /*Owner section*/
 .backgroundbox {
   height: 200px;
@@ -434,26 +321,14 @@ header {
   margin: auto;
 }
 
-@media (max-width: 600px) {
-  .ownerbox {
-    height: auto;
-    padding: 16px;
-  }
-
-  .ownerbox img {
-    width: 60px;
-    height: 60px;
-  }
+.ownerbox img {
+  width: 60px;
+  height: 60px;
 }
+
 .hotchoc {
   display: flex;
   justify-content: right;
-}
-
-@media (max-width: 600px) {
-  .hotchoc {
-    display: none;
-  }
 }
 
 .FBicon,
@@ -474,13 +349,6 @@ header {
   margin-bottom: 0;
 }
 
-@media (max-width: 600px) {
-  .footerbox {
-    width: 100%;
-    padding: 16px;
-  }
-}
-
 .footerbox h1 {
   color: rgba(242, 236, 224, 1);
   font-family: Lora;
@@ -492,14 +360,6 @@ header {
   padding-top: 32px;
 }
 
-@media (max-width: 600px) {
-  .footerbox h1 {
-    font-size: 18px;
-    padding-bottom: 16px;
-    padding-top: 16px;
-  }
-}
-
 .footernav a {
   color: rgba(243, 234, 225, 1);
   position: relative;
@@ -509,27 +369,12 @@ header {
   padding-left: 32px;
 }
 
-@media (max-width: 600px) {
-  .footernav a {
-    font-size: 14px;
-    padding-right: 20px;
-    padding-left: 16px;
-  }
-}
-
 .footertext {
   display: flex;
   flex-direction: row;
   text-align: center;
   padding: 16px;
   justify-content: center;
-}
-
-@media (max-width: 600px) {
-  .footertext {
-    flex-direction: column;
-    padding: 8px;
-  }
 }
 
 .footerhours h2 {
@@ -602,7 +447,4 @@ header {
   display: flex;
   text-align: right;
   justify-content: center;
-}
-
-@media (min-width: 1024px) {
 }

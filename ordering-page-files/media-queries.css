@@ -26,12 +26,11 @@ Sammies Note:
 /* Moblie media queries */
 
 /*i moved a copy of your media querie from your css into this file up to u which one u wanna go with*/
-/*
+
 @media (max-width: 600px) {
   main {
     width: 100%;
   }
-
 
   .bestsellers {
     height: auto;
@@ -146,7 +145,6 @@ Sammies Note:
     padding: 8px;
   }
 }
-*/
 
 @media (max-width: 425px) {
   main {
@@ -300,21 +298,22 @@ Sammies Note:
 @media (max-width: 320px) {
   main {
     width: 100%;
-    max-width: 320px;
   }
 
   /*Top part */
+
   .infobox h1 {
-    font-size: small;
+    font-size: 20px; /* Adjusted to ensure compatibility */
+  }
+
+  .bestsellers {
+    height: auto;
+    width: 100%;
   }
 
   /*Socials section */
   .ownerimg {
     display: none;
-  }
-
-  .infobox h1 {
-    font-size: 26px;
   }
 
   .menubtn,
@@ -327,13 +326,14 @@ Sammies Note:
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Added for alignment */
   }
 
   .espressopart,
   .lattepart,
   .hotcocopart,
   .cheesecakepart {
-    padding: 10%;
+    padding: 8px; /* Reduced padding for smaller screens */
     margin: 0 2%;
     width: 48%;
   }
@@ -341,17 +341,17 @@ Sammies Note:
   .infoandcoffeebox {
     flex-direction: column;
   }
+  .cafeinfobox {
+    width: 100%; /* Adjusted width for better layout */
+  }
 
-  .cafeinfobox,
   .coffeedripbox {
-    width: 100%;
-    height: auto;
-    padding-bottom: 32px;
+    width: 100%; /* Adjusted width for better layout */
   }
 
   .footernav a {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 8px; /* Reduced padding for smaller screens */
+    padding-left: 8px;
   }
 }
 

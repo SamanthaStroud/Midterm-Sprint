@@ -106,7 +106,7 @@ window.addEventListener("DOMContentLoaded", () => {
 // Display items in cart
 const displayCartItems = () => {
   const cartContainer = document.getElementById("cart-items");
-  cartContainer.innerHTML = ""; // Clear current cart
+  cartContainer.innerHTML = "";
 
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
