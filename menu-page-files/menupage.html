@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu page</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu | THE DAILY GRIND CAFE</title>
+    <meta name="viewport" content="width=1440">
+    <link rel="stylesheet" href="menupage.css">
+    <link rel="stylesheet" href="tabletqueries.css">
+    <link rel="stylesheet" href="phonequeries.css">
+</head>
+<body>
+
+    <!-- Header Bar -->
+    <header>
+      <h2 class="cafename">THE DAILY GRIND CAFE</h2>
+      <nav class="navigation">
+        <a href="../main-page-files/index.html">HOME</a>
+        <a href="../menu-page-files/menupage.html">MENU</a>
+        <a href="../ordering-page-files/orderpage.html">ORDER</a>
+      </nav>
+    </header>
+
+    <!-- Top Image and Info Section -->
+    <section class="menu-hero">
+        <img src="images/topimage.jpg" alt="Cafe interior" class="main-img">
+        <div class="menu-hero-info">
+            <h1>Menu Items</h1>
+            <p>
+                Explore our full menu and discover what makes every visit special. From rich, freshly brewed coffees to handcrafted treats and savory bites, there's something to satisfy every craving.<br>
+                Take a look—your next favorite is waiting to be found.
+            </p>
+            <div class="hero-buttons">
+                <a href="orderpage.html" class="hero-btn">ORDER HERE</a>
+                <a href="index.html" class="hero-btn">HOME PAGE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Menu Section -->
+    <section class="menu-section">
+        <div class="menu-box">
+            <h2>Our Grind Beverage Selection</h2>
+            <div class="menu-items beverage-row">
+                <article class="menu-card">
+                    <img src="images/espresso.png" alt="Espresso" class="menu-img">
+                    <div class="menu-title">Espresso</div>
+                    <div class="menu-subtitle">Bold & Rich</div>
+                    <div class="menu-price">$3.50</div>
+                    <button class="add-to-order" data-name="Espresso" data-price="3.50">Add to Order</button>
+                </article>
+                <article class="menu-card">
+                    <img src="images/latte.png" alt="Latte" class="menu-img">
+                    <div class="menu-title">Latte</div>
+                    <div class="menu-subtitle">Espresso & Steamed Milk</div>
+                    <div class="menu-price">$3.75</div>
+                    <button class="add-to-order" data-name="Latte" data-price="3.75">Add to Order</button>
+                </article>
+                <article class="menu-card">
+                    <img src="images/hotchoc.png" alt="Hot Chocolate" class="menu-img">
+                    <div class="menu-title">Hot Chocolate</div>
+                    <div class="menu-subtitle">Creamy Cocoa Treat</div>
+                    <div class="menu-price">$3.50</div>
+                    <button class="add-to-order" data-name="Hot Chocolate" data-price="3.50">Add to Order</button>
+                </article>
+                <article class="menu-card">
+                    <img src="images/tea.png" alt="English Breakfast" class="menu-img">
+                    <div class="menu-title">English Breakfast</div>
+                    <div class="menu-subtitle">Classic Black Tea</div>
+                    <div class="menu-price">$2.50</div>
+                    <button class="add-to-order" data-name="English Breakfast" data-price="2.50">Add to Order</button>
+                </article>
+            </div>
+        </div>
+        <div class="menu-box">
+            <h2>Snacks & Desserts</h2>
+            <div class="menu-items snack-row">
+                <article class="menu-card">
+                    <img src="images/bagel.png" alt="Everything Bagel" class="menu-img">
+                    <div class="menu-title">Everything Bagel</div>
+                    <div class="menu-subtitle">Toasted - Butter & Cream Cheese</div>
+                    <div class="menu-price">$4.00</div>
+                    <button class="add-to-order" data-name="Everything Bagel" data-price="4.00">Add to Order</button>
+                </article>
+                <article class="menu-card">
+                    <img src="images/toast.png" alt="Avocado Toast" class="menu-img">
+                    <div class="menu-title">Avocado Toast</div>
+                    <div class="menu-subtitle">Fresh Avocado & Two Poached Eggs</div>
+                    <div class="menu-price">$5.50</div>
+                    <button class="add-to-order" data-name="Avocado Toast" data-price="5.50">Add to Order</button>
+                </article>
+                <article class="menu-card">
+                    <img src="images/cake.png" alt="Cheesecake" class="menu-img">
+                    <div class="menu-title">Cheesecake</div>
+                    <div class="menu-subtitle">Creamy Filling & Graham Crust</div>
+                    <div class="menu-price">$4.25</div>
+                    <button class="add-to-order" data-name="Cheesecake" data-price="4.25">Add to Order</button>
+                </article>
+                <article class="menu-card">
+                    <img src="images/roll.png" alt="Cinnamon Roll" class="menu-img">
+                    <div class="menu-title">Cinnamon Roll</div>
+                    <div class="menu-subtitle">Soft Cinnamon Sugar Swirls & Icing</div>
+                    <div class="menu-price">$4.00</div>
+                    <button class="add-to-order" data-name="Cinnamon Roll" data-price="4.00">Add to Order</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Info Section -->
+    <section class="social-section">
+        <div class="social-box">
+            <p>For more info and to stay up to date, follow us @Dailygrindcafe</p>
+            <span>
+                <a href="#" class="social-icon"><img src="images/insta.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="images/fbook.png" alt="Facebook"></a>
+            </span>
+        </div>
+        <img src="images/bottompic.png" class="social-img" alt="Hot choccy">
+    </section>
+    
+     <!-- Footer section -->
+    <footer class="footerbox">
+      <div class="footertitle">
+        <h1>THE DAILY GRIND CAFE</h1>
+        <nav class="footernav">
+          <a href="../main-page-files/index.html">HOME</a>
+          <a href="../menu-page-files/menupage.html">MENU</a>
+          <a href="../ordering-page-files/orderpage.html">ORDER</a>
+        </nav>
+      </div>
+      <div class="footertext">
+        <div class="footerhours">
+          <h2>Operating Hours</h2>
+          <p>Monday - Friday:<br /></p>
+          <p>6:00am - 8:00pm</p>
+          <br />
+          <p>Saturday - Sunday:<br /></p>
+          <p>9:00am - 7:00pm</p>
+        </div>
+        <div class="footerophr">
+          <hr />
+        </div>
+        <div class="footerlocationbox">
+          <div class="footerlocation">
+            <h3>Newfoundland Location:<br /></h3>
+            <p>1-709-453-1235<br /></p>
+            <p>123 Main Street, St. John's<br /></p>
+            <p>Newfoundland, Canada</p>
+          </div>
+          <hr />
+          <div class="footerlocation">
+            <h3>Toronto Location:<br /></h3>
+            <p>1-709-234-3456<br /></p>
+            <p>321 Happy Place, Toronto<br /></p>
+            <p>Ontario, Canada</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
