@@ -47,7 +47,6 @@ header {
   }
 }
 
-/* gotta figure out the images width part*/
 .toppart {
   position: relative;
 }
@@ -116,6 +115,13 @@ header {
   background: #f2ece0;
 }
 
+@media (max-width: 600px) {
+  .bestsellers {
+    height: auto;
+    width: 100%;
+  }
+}
+
 .bestsellers h1 {
   padding: 16px;
   color: #452816;
@@ -128,6 +134,49 @@ header {
   display: flex;
   justify-content: center;
   padding-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .bestsellers h1 {
+    font-size: 24px;
+    padding-top: 8px;
+  }
+}
+
+.bestsellers p {
+  color: #452816;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.itemrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding-top: 0;
+}
+
+@media (max-width: 600px) {
+  .itemrow {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+.pinkstarimg {
+  padding-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .pinkstarimg {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /*cafe info section*/
@@ -145,7 +194,7 @@ header {
 
 @media (max-width: 600px) {
   .cafeinfobox {
-    width: 500%;
+    width: 50%;
     height: auto;
     padding-bottom: 32px;
   }
@@ -187,14 +236,6 @@ header {
   }
 }
 
-.itemrow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0;
-  padding-top: 0;
-}
-
 .texrbox-10 {
   padding: 8px;
   margin: 8px;
@@ -212,7 +253,7 @@ header {
 
 @media (max-width: 600px) {
   .texrbox-10 {
-    width: 200px;
+    width: 120px;
     font-size: 14px;
   }
 }
@@ -232,6 +273,17 @@ header {
   padding-bottom: 32px;
 }
 
+@media (max-width: 600px) {
+  .espressopart,
+  .lattepart,
+  .hotcocopart,
+  .cheesecakepart {
+    padding: 16px;
+    margin: 0 8px;
+    width: 100%;
+  }
+}
+
 .cheesecakeimg,
 .hotcocoimg,
 .latteimg,
@@ -242,16 +294,14 @@ header {
   padding-top: 8px;
 }
 
-.infoandcoffeebox {
-  display: flex;
-}
-
-.itemrow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0;
-  padding-top: 0;
+@media (max-width: 600px) {
+  .cheesecakeimg,
+  .hotcocoimg,
+  .latteimg,
+  .espressoimg {
+    width: 30px;
+    height: 55px;
+  }
 }
 
 .infoandcoffeebox {
@@ -263,6 +313,7 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   width: 50%;
   height: 392px;
   background-color: #475b4f;
@@ -302,12 +353,30 @@ header {
   margin-top: 32px;
   margin-left: 16px;
   margin-right: 16px;
-  border: 0;
   align-items: center;
 }
 
 @media (max-width: 600px) {
   .menubtn2 {
+    font-size: 14px;
+  }
+}
+
+.itembox-10 {
+  padding: 8px;
+  margin: 8px;
+  height: 30;
+  width: 275px;
+  background: rgba(227, 180, 162, 0.94);
+  color: #333;
+  border-bottom: 1px solid #999;
+  border-radius: 24px;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .itembox-10 {
+    width: 120px;
     font-size: 14px;
   }
 }
@@ -405,6 +474,13 @@ header {
   margin-bottom: 0;
 }
 
+@media (max-width: 600px) {
+  .footerbox {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
 .footerbox h1 {
   color: rgba(242, 236, 224, 1);
   font-family: Lora;
@@ -416,6 +492,14 @@ header {
   padding-top: 32px;
 }
 
+@media (max-width: 600px) {
+  .footerbox h1 {
+    font-size: 18px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+}
+
 .footernav a {
   color: rgba(243, 234, 225, 1);
   position: relative;
@@ -423,6 +507,14 @@ header {
   padding-right: 48px;
   text-decoration: none;
   padding-left: 32px;
+}
+
+@media (max-width: 600px) {
+  .footernav a {
+    font-size: 14px;
+    padding-right: 20px;
+    padding-left: 16px;
+  }
 }
 
 .footertext {
@@ -433,9 +525,11 @@ header {
   justify-content: center;
 }
 
-.footertext hr {
-  margin-bottom: 20px;
-  margin-top: 24px;
+@media (max-width: 600px) {
+  .footertext {
+    flex-direction: column;
+    padding: 8px;
+  }
 }
 
 .footerhours h2 {

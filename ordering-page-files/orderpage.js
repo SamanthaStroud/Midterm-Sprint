@@ -1,3 +1,19 @@
+localStorage.setItem(
+  "cart",
+  JSON.stringify([
+    { id: "1", name: "Pizza", price: 12.99, quantity: 2 },
+    { id: "2", name: "Pasta", price: 9.99, quantity: 1 },
+  ])
+);
+
+localStorage.setItem(
+  "customerInfo",
+  JSON.stringify({
+    name: "Jane Tester",
+    email: "jane@example.com",
+  })
+);
+
 const menuButton = document.getElementById("menubtn");
 menuButton.addEventListener("click", function () {
   window.location.href = "../menu-page-files/menupage.html";
@@ -25,7 +41,7 @@ document
   .getElementById("firstNameInput")
   .addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-      event.preventDefault(); // Prevent form submission or page reload
+      event.preventDefault();
       saveFirstName();
     }
   });
@@ -40,7 +56,6 @@ window.addEventListener("DOMContentLoaded", () => {
     return phoneRegex.test(number);
   }
 
-  // save phone number
   function savePhoneNumber() {
     const number = phoneInput.value.trim();
 
@@ -58,7 +73,6 @@ window.addEventListener("DOMContentLoaded", () => {
     alert("Phone number saved successfully!");
   }
 
-  // Attach savePhoneNumber to saveButton click event
   phoneInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
@@ -69,7 +83,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("DOMContentLoaded", () => {
   const addressInput = document.getElementById("addressInput");
-  // ✅ Function to save address
   function saveAddress() {
     const address = addressInput.value.trim();
 
@@ -89,3 +102,96 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Display items in cart
+const displayCartItems = () => {
+  const cartContainer = document.getElementById("cart-items");
+  cartContainer.innerHTML = ""; // Clear current cart
+
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  cart.forEach((item) => {
+    const itemElement = document.createElement("div");
+    itemElement.classList.add("cart-item");
+
+    itemElement.innerHTML = `
+          <h3>${item.name}</h3>
+          <p>Price: $${item.price}</p>
+          <input type="number" value="${item.quantity}" class="quantity" data-id="${item.id}" />
+          <button class="remove-item" data-id="${item.id}">Remove</button>
+      `;
+
+    cartContainer.appendChild(itemElement);
+  });
+};
+
+displayCartItems();
+
+// Adjust quantity
+document.getElementById("cart-items").addEventListener("change", (event) => {
+  if (event.target.classList.contains("quantity")) {
+    const itemId = event.target.getAttribute("data-id");
+    const newQuantity = parseInt(event.target.value);
+
+    const item = cart.find((item) => item.id === itemId);
+    if (item) {
+      item.quantity = newQuantity;
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      displayCartItems();
+      updateTotalPrice();
+    }
+  }
+});
+
+// Remove item from cart
+document.getElementById("cart-items").addEventListener("click", (event) => {
+  if (event.target.classList.contains("remove-item")) {
+    const itemId = event.target.getAttribute("data-id");
+
+    const index = cart.findIndex((item) => item.id === itemId);
+    if (index !== -1) {
+      cart.splice(index, 1); // Remove the item from the array
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      displayCartItems();
+      updateTotalPrice();
+    }
+  }
+});
+
+// Update total price
+const updateTotalPrice = () => {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const totalPrice = cart.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
+  const totalPriceElement = document.getElementById("total-price");
+  totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+};
+
+updateTotalPrice();
+
+function PlaceOrder() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const customerInfo = JSON.parse(localStorage.getItem("customerInfo"));
+
+  if (cart.length === 0) {
+    alert(
+      "Your cart is empty. Please add some items before placing your order."
+    );
+    return;
+  }
+
+  if (!customerInfo || !customerInfo.name || !customerInfo.email) {
+    alert(
+      "Please complete your customer information before placing your order."
+    );
+    return;
+  }
+
+  alert("Order placed successfully!");
+}
