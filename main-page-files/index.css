@@ -1,3 +1,5 @@
+/*CSS style for the mainpage by Samantha Stroud*/
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -40,7 +42,6 @@ header {
   text-decoration: none;
 }
 
-/* gotta figure out the images width part*/
 .toppart {
   position: relative;
 }
@@ -253,11 +254,6 @@ hr {
   max-width: 50vw;
   padding-left: 0;
   background-color: rgba(69, 40, 22, 1);
-}
-
-.coffeebeanimg {
-  height: 504px;
-  padding: 0;
 }
 
 .coffeedripinfo {
@@ -551,7 +547,4 @@ hr {
   display: flex;
   text-align: right;
   justify-content: center;
-}
-
-@media (min-width: 1024px) {
 }

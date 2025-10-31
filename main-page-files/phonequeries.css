@@ -1,5 +1,4 @@
-/*i know its recommended to have 1 querier for each type of device but i couldnt get 
-certain parts to smoothly transtion so i made them each have their own */
+/*CSS style for the mainpage moblie media queries by Samantha Stroud*/
 
 @media (max-width: 425px) {
   body,
@@ -218,14 +217,6 @@ certain parts to smoothly transtion so i made them each have their own */
     padding-left: 58%;
   }
 
-  .cafehours {
-    padding-right: 3%;
-  }
-
-  .cafelocation {
-    padding-left: 3%;
-  }
-
   /* Owner Section */
   .ownerimg {
     width: 50%;
@@ -244,6 +235,10 @@ certain parts to smoothly transtion so i made them each have their own */
 
 @media (max-width: 320px) {
   /* Top Part  */
+  main {
+    width: 100%;
+  }
+
   .infobox h1 {
     font-size: x-large;
   }
@@ -278,3 +273,4 @@ certain parts to smoothly transtion so i made them each have their own */
     padding-left: 50%;
   }
 }
+
