@@ -131,7 +131,7 @@ header {
     background: var(--section-bg);
     border-radius: 16px;
     width: 95%;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 40px auto;
     padding: 32px 0;
     box-shadow: 0 0 4px #2224;
 }
@@ -165,12 +165,14 @@ header {
     text-align: center;
     width: 168px;
     padding: 18px 14px 22px 14px;
-    box-shadow: 0 1px 6px #2222;
+    border: 2px solid #27463B;           
+    box-shadow: 0 1px 6px #2222, 0 0 10px 2px #27463BAA;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 6px;
 }
+
 
 .menu-img {
     width: 136px;
