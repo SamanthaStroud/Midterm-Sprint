@@ -26,12 +26,11 @@ Sammies Note:
 /* Moblie media queries */
 
 /*i moved a copy of your media querie from your css into this file up to u which one u wanna go with*/
-/*
-@media (max-width: 600px) {
+
+@media (min-width: 376px) and (max-width: 600px) {
   main {
     width: 100%;
   }
-
 
   .bestsellers {
     height: auto;
@@ -146,12 +145,14 @@ Sammies Note:
     padding: 8px;
   }
 }
-*/
-
 @media (max-width: 425px) {
   main {
     width: 100%;
     max-width: 425px;
+  }
+
+  header h2 {
+    font-size: 54pt;
   }
 
   /* Best Seller Section (Scroll)*/
