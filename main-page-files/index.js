@@ -5,7 +5,12 @@ menuButton.addEventListener("click", function () {
 });
 
 //Order Button
-const homeButton = document.getElementById("orderbtn");
-homeButton.addEventListener("click", function () {
+const orderButton = document.getElementById("orderbtn");
+orderButton.addEventListener("click", function () {
   window.location.href = "../ordering-page-files/orderpage.html";
+});
+
+const menuButtonTwo = document.getElementById("menubtntwo");
+menuButtonTwo.addEventListener("click", function () {
+  window.location.href = "../menu-page-files/menupage.html";
 });
