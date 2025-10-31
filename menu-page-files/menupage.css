@@ -131,7 +131,7 @@ header {
     background: var(--section-bg);
     border-radius: 16px;
     width: 95%;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 40px auto;
     padding: 32px 0;
     box-shadow: 0 0 4px #2224;
 }

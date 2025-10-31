@@ -1,12 +1,4 @@
 localStorage.setItem(
-  "cart",
-  JSON.stringify([
-    { id: "1", name: "Pizza", price: 12.99, quantity: 2 },
-    { id: "2", name: "Pasta", price: 9.99, quantity: 1 },
-  ])
-);
-
-localStorage.setItem(
   "customerInfo",
   JSON.stringify({
     name: "Jane Tester",
@@ -83,9 +75,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("DOMContentLoaded", () => {
   const addressInput = document.getElementById("addressInput");
+
   function saveAddress() {
     const address = addressInput.value.trim();
-
     if (!address) {
       alert("Please enter your address.");
       return;
@@ -104,7 +96,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // Display items in cart
-const displayCartItems = () => {
+function displayCartItems() {
   const cartContainer = document.getElementById("cart-items");
   cartContainer.innerHTML = "";
 
@@ -115,15 +107,19 @@ const displayCartItems = () => {
     itemElement.classList.add("cart-item");
 
     itemElement.innerHTML = `
-          <h3>${item.name}</h3>
-          <p>Price: $${item.price}</p>
-          <input type="number" value="${item.quantity}" class="quantity" data-id="${item.id}" />
-          <button class="remove-item" data-id="${item.id}">Remove</button>
-      `;
+      <h3>${item.name}</h3>
+      <p>Price: $${parseFloat(item.price).toFixed(2)}</p>
+      <input type="number" value="${item.quantity}" class="quantity" data-id="${
+      item.id
+    }" />
+      <button class="remove-item" data-id="${item.id}">Remove</button>
+    `;
 
     cartContainer.appendChild(itemElement);
   });
-};
+
+  updateTotalPrice();
+}
 
 displayCartItems();
 
@@ -133,14 +129,12 @@ document.getElementById("cart-items").addEventListener("change", (event) => {
     const itemId = event.target.getAttribute("data-id");
     const newQuantity = parseInt(event.target.value);
 
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
     const item = cart.find((item) => item.id === itemId);
     if (item) {
       item.quantity = newQuantity;
-
       localStorage.setItem("cart", JSON.stringify(cart));
-
       displayCartItems();
-      updateTotalPrice();
     }
   }
 });
@@ -149,6 +143,8 @@ document.getElementById("cart-items").addEventListener("change", (event) => {
 document.getElementById("cart-items").addEventListener("click", (event) => {
   if (event.target.classList.contains("remove-item")) {
     const itemId = event.target.getAttribute("data-id");
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     const index = cart.findIndex((item) => item.id === itemId);
     if (index !== -1) {
@@ -170,14 +166,16 @@ const updateTotalPrice = () => {
     0
   );
   const totalPriceElement = document.getElementById("total-price");
-  totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+  totalPriceElement.textContent = `Total: ${totalPrice.toFixed(2)}`;
 };
 
 updateTotalPrice();
 
 function PlaceOrder() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  const customerInfo = JSON.parse(localStorage.getItem("customerInfo"));
+  const name = localStorage.getItem("firstName");
+  const phone = localStorage.getItem("phoneNumber");
+  const address = localStorage.getItem("address");
 
   if (cart.length === 0) {
     alert(
@@ -186,12 +184,12 @@ function PlaceOrder() {
     return;
   }
 
-  if (!customerInfo || !customerInfo.name || !customerInfo.email) {
+  if (!name || !phone || !address) {
     alert(
       "Please complete your customer information before placing your order."
     );
     return;
   }
 
-  alert("Order placed successfully!");
+  alert(`Thanks, ${name}! Your order has been placed successfully.`);
 }

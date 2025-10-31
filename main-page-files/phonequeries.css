@@ -142,7 +142,6 @@
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 4%;
-    /* ⬅️ Reduced padding-left for better visibility */
     padding-left: 32%;
   }
 
@@ -273,4 +272,3 @@
     padding-left: 50%;
   }
 }
-
