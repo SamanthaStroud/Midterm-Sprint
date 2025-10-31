@@ -1,0 +1,399 @@
+/** 
+Sammies Note:
+!Not sure if all 7 is needed but i assume so!
+
+ Media queries for 3 moblie sizes 320px, 375px, and 425px(i added a little bit for each one)
+
+ Media queries for tablet size 768px (fix the best sellers and the image on the 
+ bottom to click the sizing into place) (Fixed -sam)
+
+ Media queries for 2 laptop sizes 1024px (this one only needs the best sellers 
+ messed with so the width can click into place) (fixed- Sam)
+ 1440px (this one done already) 
+
+ Media queries for desktop size 2560px (this one done already) 
+ 
+ !! if u need help lmk before noon tomorrow :) !!
+ Whats left for u to do: the 3 moblie querie (header, top part section and the customer detail/item selection) 
+ i have the footer and lower section finsihed for all queries. once u get the main once done the 
+ other 2 should be fairly quick
+
+ !!! double check the desktop and laptop quries as u are working on the moblie 
+ they can sometimes mess up those queries and might require a little fixing !!!
+
+ **/
+
+/* Moblie media queries */
+
+/*i moved a copy of your media querie from your css into this file up to u which one u wanna go with*/
+/*
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+
+
+  .bestsellers {
+    height: auto;
+    width: 100%;
+  }
+
+  .bestsellers h1 {
+    font-size: 24px;
+    padding-top: 8px;
+  }
+
+  .itemrow {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .pinkstarimg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cafeinfobox {
+    width: 50%;
+    height: auto;
+    padding-bottom: 32px;
+  }
+
+  .cafeinfobox h1 {
+    font-size: 24px;
+  }
+
+  .cafeinfobox p {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+
+  .texrbox-10 {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  .espressopart,
+  .lattepart,
+  .hotcocopart,
+  .cheesecakepart {
+    padding: 16px;
+    margin: 0 8px;
+    width: 100%;
+  }
+
+  .cheesecakeimg,
+  .hotcocoimg,
+  .latteimg,
+  .espressoimg {
+    width: 30px;
+    height: 55px;
+  }
+
+  .coffeedripbox {
+    width: 500%;
+    height: auto;
+    padding-bottom: 32px;
+  }
+
+  .coffeedripinfo h1 {
+    font-size: 24px;
+  }
+
+  .menubtn2 {
+    font-size: 14px;
+  }
+
+  .itembox-10 {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  .ownerbox {
+    height: auto;
+    padding: 16px;
+  }
+
+  .ownerbox img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .hotchoc {
+    display: none;
+  }
+
+  .footerbox {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .footerbox h1 {
+    font-size: 18px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+  .footernav a {
+    font-size: 14px;
+    padding-right: 20px;
+    padding-left: 16px;
+  }
+
+  .footertext {
+    flex-direction: column;
+    padding: 8px;
+  }
+}
+*/
+
+@media (max-width: 425px) {
+  main {
+    width: 100%;
+    max-width: 425px;
+  }
+
+  /* Best Seller Section (Scroll)*/
+  .itemrow {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 8%;
+    padding-left: 50%;
+    margin: 0 auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .ownerimg {
+    display: none;
+  }
+
+  .bestsellers {
+    width: 100%;
+    height: auto;
+    padding: 16px 0;
+  }
+
+  .espressopart,
+  .lattepart,
+  .hotcocopart,
+  .cheesecakepart {
+    min-width: 160px;
+    padding: 12px;
+    margin: 0 8px;
+    flex-shrink: 0;
+  }
+
+  .cheesecakeimg,
+  .hotcocoimg,
+  .latteimg,
+  .espressoimg {
+    width: 32px;
+    height: 55px;
+  }
+
+  .cafeinfobox,
+  .coffeedripbox {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .ownerimg {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  /*Complete this one for the moblie media queries*/
+  main {
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .bestsellers h1,
+  .cafeinfobox h1,
+  .coffeedripinfo h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .itemrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 0;
+  }
+
+  .espressopart,
+  .lattepart,
+  .hotcocopart,
+  .cheesecakepart {
+    width: 48%;
+    padding: 8px;
+    margin: 0;
+  }
+
+  .cheesecakeimg,
+  .hotcocoimg,
+  .latteimg,
+  .espressoimg {
+    width: 28px;
+    height: 50px;
+  }
+
+  .cafeinfobox,
+  .coffeedripbox {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .texrbox-10,
+  .itembox-10 {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .menubtn2 {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .ownerbox {
+    padding: 12px;
+    text-align: center;
+  }
+
+  .ownerbox img,
+  .ownerimg {
+    display: none;
+  }
+
+  .footerbox {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .footerbox h1 {
+    font-size: 16px;
+    padding: 12px 0;
+    text-align: center;
+  }
+
+  .footernav a {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+
+  .footertext {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+  }
+
+  .hotchoc {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  main {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /*Top part */
+  .infobox h1 {
+    font-size: small;
+  }
+
+  /*Socials section */
+  .ownerimg {
+    display: none;
+  }
+
+  .infobox h1 {
+    font-size: 26px;
+  }
+
+  .menubtn,
+  .homebtn {
+    width: 100%;
+  }
+
+  /* BEST SELLERS*/
+  .itemrow {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .espressopart,
+  .lattepart,
+  .hotcocopart,
+  .cheesecakepart {
+    padding: 10%;
+    margin: 0 2%;
+    width: 48%;
+  }
+
+  .infoandcoffeebox {
+    flex-direction: column;
+  }
+
+  .cafeinfobox,
+  .coffeedripbox {
+    width: 100%;
+    height: auto;
+    padding-bottom: 32px;
+  }
+
+  .footernav a {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+/*Tablet media queries */
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+
+  .itemrow {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 70%;
+    margin: 0 auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .ownerimg {
+    width: 100%;
+  }
+}
+
+/*Laptop and Computer */
+@media (min-width: 1024px) {
+  .itemrow {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 30%;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (min-width: 1440px) {
+  .itemrow {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 2560px) {
+  .itemrow {
+    margin: 0 auto;
+  }
+}
